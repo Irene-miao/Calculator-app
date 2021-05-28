@@ -1,0 +1,7 @@
+.keypad {
+    display: grid;
+   grid-template-columns: repeat(4, auto);
+   grid-auto-rows: minmax(80px, auto);
+  grid-gap:0;
+   
+}

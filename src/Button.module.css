@@ -1,0 +1,21 @@
+.button {
+    background: #07090F;
+    width: 30%;
+    font-size: 24px;
+    color: #8D909B;
+    height: 40%;
+    text-align: center;
+}
+
+.button[data-size="2"] {
+    height: 40%;
+}
+
+.button[data-value="null"] {
+    pointer-events: none;
+}
+
+.button:hover {
+    background: #FDFDFF;
+    cursor: default;
+}
