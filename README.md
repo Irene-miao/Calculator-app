@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Project Description: Created a calculator app
+Followed the tutorials by Georgi Georgiev and Nipa Das to create a calculator app.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
