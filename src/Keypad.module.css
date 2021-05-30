@@ -1,7 +1,11 @@
 .keypad {
-    display: grid;
-   grid-template-columns: repeat(4, auto);
-   grid-auto-rows: minmax(80px, auto);
-  grid-gap:0;
-   
+  position: absolute;
+    top: 20%;
+    left: 10%;
+ display: grid;
+ grid-auto-flow: column;
+grid-template-rows: 60px 60px 60px 60px;
+grid-template-columns: 60px 60px 60px 60px;
+   grid-gap: 10px;
+
 }

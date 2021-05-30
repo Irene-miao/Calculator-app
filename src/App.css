@@ -1,7 +1,5 @@
 
 .calc {
-  margin-top: 40px;
-  width: 200px;
-  text-align:center;
-
+position: relative;
+margin: 0 auto;
 }
