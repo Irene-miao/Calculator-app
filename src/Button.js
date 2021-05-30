@@ -6,7 +6,6 @@ const Button = (props) => {
         <div 
         className={classes.button}
         onClick={props.onClick}
-        data-size={props.size}
         data-value={props.value}
         >
             {props.label}

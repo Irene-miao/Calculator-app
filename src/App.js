@@ -3,9 +3,11 @@ import classes from './App.css';
 import Button from './Button';
 import Keypad from './Keypad';
 import Display from './Display';
+import reactDom from 'react-dom';
 
 function App() {
   const [data, setData] = useState('');
+  const [size, setSize] = useState(0);
 
   const calculate = () => {
     try {
@@ -25,15 +27,26 @@ function App() {
         break;
       case 'equal':
         calculate();
+        setSize(size + 1);
         break;
       default:
         setData(data+value);
-    }
+    };
+    
   };
+ 
 
+  let content;
+  if (size === '') {
+    content = <p>No operations.</p>
+  } else {
+    content = <p>There are a total of {size} operations.</p>
+  };
+ 
 
   return (
     <div className={classes.calc}>
+      <p>{content}</p>
     <Display data={data} />
     <Keypad>
     <Button onClick={handleClick} label="1"  value="1" />
@@ -45,12 +58,12 @@ function App() {
     <Button onClick={handleClick} label="7"  value="7" />
     <Button onClick={handleClick} label="8"  value="8" />
     <Button onClick={handleClick} label="9"  value="9" />
-<Button onClick={handleClick} label="+"  size="2"    value="+" />
-<Button onClick={handleClick} label="-"  size="2"    value="-"/>
-<Button onClick={handleClick} label="/"  size="2"    value="/"/>
-<Button onClick={handleClick} label="*"  size="2"    value="*"/>
-<Button onClick={handleClick} label="Reset"  size="2"    value="reset"/>
-<Button onClick={handleClick} label="="  size="2"    value="equal"/>
+<Button onClick={handleClick} label="+"     value="+" />
+<Button onClick={handleClick} label="-"      value="-"/>
+<Button onClick={handleClick} label="/"    value="/"/>
+<Button onClick={handleClick} label="*"     value="*"/>
+<Button onClick={handleClick} label="Reset"     value="reset"/>
+<Button onClick={handleClick} label="="   value="equal"/>
     </Keypad>
     </div>
   );
