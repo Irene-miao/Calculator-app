@@ -1,5 +1,5 @@
 # Project Description: Created a calculator app
-Followed the tutorials by Georgi Georgiev and Nipa Das to create a calculator app.
+Followed the tutorials by Georgi Georgiev and Nipa Das to create a calculator app: https://irene-miao.github.io/Calculator-app/
 
 
 ## Getting Started with Create React App
